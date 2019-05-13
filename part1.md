@@ -35,3 +35,24 @@ Searching..
 </body></html>
 
 
+# 1.6
+docker build -t docker-clock .
+docker run docker-clock
+
+# 1.7
+docker build -t curler .
+docker run -it curler
+
+# 1.8
+docker run -v $(pwd) devopsdockeruh/first_volume_exercise
+
+# 1.9
+docker run -p 80:80 devopsdockeruh/ports_exercise
+
+# 1.10
+docker build -t frontend .
+docker run -p 5000:5000 frontend
+
+# 1.11
+docker build -t backend .
+docker run -v $(pwd):/usr/app/logs.txt -p 8000:8000 backend

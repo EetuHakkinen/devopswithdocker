@@ -36,3 +36,9 @@ Searching..
 
 # 1.6
 docker run docker-clock --clock
+
+# 1.8
+sudo docker run -v $(pwd) devopsdockeruh/first_volume_exercise
+
+# 1.9
+sudo docker run -p 80:80 devopsdockeruh/ports_exercise
