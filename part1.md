@@ -20,6 +20,10 @@ docker run -it devopsdockeruh/pull_exercise
 password: basics
 Secret message: "This is the secret message"
 
+# 1.4
+docker run devopsdockeruh/exec_bash_exercise
+Secret message: "This is the secret message"
+
 # 1.5
 sudo docker run -it ubuntu:16.04 sh -c 'apt-get update; apt-get install curl; echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
 
@@ -56,3 +60,24 @@ docker run -p 5000:5000 frontend
 # 1.11
 docker build -t backend .
 docker run -v $(pwd):/usr/app/logs.txt -p 8000:8000 backend
+
+# 1.12
+docker build -t frontend .
+docker run -p 5000:5000 frontend
+
+docker build -t backend .
+docker run -v $(pwd):/usr/app/logs.txt -p 8000:8000 backend
+
+# 1.13
+docker build -t spring .
+docker run -p 8080:8080 spring
+
+# 1.15
+dockerhub repo: eetuh/dockertraining
+
+# 1.16
+https://eetuhdockerheroku.herokuapp.com/
+
+# 1.17
+My favourite programming environment contains node and npm on ubuntu.
+https://cloud.docker.com/u/eetuh/repository/docker/eetuh/eetuhdockerheroku
