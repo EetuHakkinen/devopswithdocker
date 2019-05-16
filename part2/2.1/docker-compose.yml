@@ -1,0 +1,9 @@
+version: '3.5'
+
+services: 
+
+    first-vol:
+        image: devopsdockeruh/first_volume_exercise
+        volumes: 
+            - .:/usr/app
+        container_name: first-vol
