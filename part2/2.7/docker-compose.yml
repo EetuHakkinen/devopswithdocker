@@ -14,6 +14,10 @@ services:
   train:
     build: ml-kurkkumopo-training/
     volumes:
-      - /src/model:/model
-      - /src/data:/data
-      - /src/imgs:/imgs
+      - model:/model
+      - data:/data
+
+volumes:
+  model:
+  data:
+
